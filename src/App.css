@@ -1,0 +1,189 @@
+.App {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1633911205882-b3ac4644da1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80);
+    background-repeat: no-repeat;
+    align-items: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+
+.card {
+    width: 100%;
+    max-width: 500px;
+    background-color: hsla(213, 50%, 19%, 0.577);
+    padding: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color: white;
+    box-shadow: 5px 3px 18px #00000092;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 4px 4px 8px rgb(53, 38, 38) ;
+}
+
+.card__title {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 6px 4px 5px #00000077;
+    margin-bottom: 8px;
+    color: #845EC2;
+}
+
+.card__subtitle {
+    grid-column: span 2;
+    text-align: center;
+    color: rgba(245, 245, 220, 0.71);
+    text-shadow: 6px 4px 5px #00000077;
+
+}
+
+.second__title {
+
+    font-family: cursive;
+    font-weight: 300;
+    color: #926C00;
+    text-shadow: 6px 4px 5px #00000077;
+}
+
+.card__temperature {
+    color: rgb(245, 245, 220);
+    text-shadow: 6px 4px 5px #00000077;
+    font-size: 46px;
+    padding: 10px;
+}
+
+.card__second-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.second__list {
+    display: grid;
+    gap: 7px;
+}
+
+.card__first-section{
+    position: relative;
+    margin: auto;
+}
+
+.second__item {
+    opacity: 0.7;
+}
+
+.second__item {
+    color: #CCCCCC;
+}
+
+.second__span {
+    color: #4FFBDF;
+    text-shadow: 6px 4px 5px #00000077;
+}
+
+.card__temperature {
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.card__btn {
+    grid-column: span 2;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #008970be;
+    color: #845EC2;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow:#D5CABD 1px 1px 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #CCCCCC;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px #0009;
+    cursor: pointer;
+    transition: transform 200ms ease;
+    -webkit-transition: transform 200ms ease;
+    -moz-transition: transform 200ms ease;
+    -ms-transition: transform 200ms ease;
+    -o-transition: transform 200ms ease;
+}
+
+.card__btn:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale (1.05);
+    -moz-transform: scale (1.05);
+    -ms-transform: scale (1.05);
+    -o-transform: scale (1.05);
+    filter: brightness(1.2);
+    -webkit-filter: brightness(1.2);
+    transition: transform 200ms ease;
+    box-shadow:#D5CABD 2px 2px 4px;
+    -webkit-transition: transform 200ms ease;
+    -moz-transition: transform 200ms ease;
+    -ms-transition: transform 200ms ease;
+    -o-transition: transform 200ms ease;
+}
+
+/* SPINNER DE CARGA */
+.spinner {
+    border: 4px solid rgba(166, 129, 129, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #09f;
+    animation: spin 1s ease infinite;
+    -webkit-animation: spin 2s ease infinite;
+    box-shadow: 4px 4px 4px darkgray;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* RESPONSIVIDAD */
+
+
+@media screen and (max-width:450px) and (min-width:300px) {
+    .card {
+        max-width: 280px;
+    }
+
+    .card__temperature {
+        margin-top: 15px;
+    }
+
+    .second__item{
+        margin-top: 7px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-image: url(https://images.unsplash.com/photo-1633911205882-b3ac4644da1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80);
+    }
+}
